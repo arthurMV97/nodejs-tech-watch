@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Technology-watch en Node.JS</title>
+</head>
+<body>
+
+<h1>Technology Watch v2</h1>
+    <section>
+        <div id="div-names">
+            <h2>Student Registered</h2>
+            <ul>
+                <li>
+                <%= namesToEJS %> 
+                </li>
+            </ul>
+
+        </div>
+        <div id="div-assignments">
+            <h2>Technology-watch Assignated</h2>
+            <ul>
+                <li>
+                    <%= technosToEJS %> 
+                </li>
+            </ul>
+            
+        </div>
+
+        <div id="buttons">
+            <form action="" method="POST">
+            <div id="input1">
+                <label for="name">Student Names:</label>
+                <input type="text" id="name" name="name">
+                <button id="add-button" class="btn btn-success">Add</button>
+            </div>
+            </form>
+            <form action="" method="POST">
+            <div id="input2">
+                <label for="technos">Technology Names:</label>
+                <input type="text" id="techno" name="techno">
+                <button id="assign-button" class="btn btn-success">Assign</button>
+            </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
